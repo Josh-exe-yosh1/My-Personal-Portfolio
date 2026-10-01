@@ -2,7 +2,7 @@
 
 This is a website i designed to show just a little bit about myself as an enrolled student of Software development.
 
-##Find my live websitehere; **https://josh-exe-yosh1.github.io/New-folder--2-/**
+##Find my live websitehere; **https://josh-exe-yosh1.github.My Personal Portfolio**
 
 #Contact Me
 **Email: joshuaondere7@gmail.com
