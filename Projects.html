@@ -3,110 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <title>My Projects | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="projects.css">
 </head>
+
 <body>
 
-    <div class="container">
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+
+            <h1 class="logo">My Portfolio</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
+
     <main>
-    
-        <section id="hero">
-            <h1>Joshua Ondere</h1>
-            <p class="tagline">A young aspiring Web developer looking to change the future of technology </p>
-            <img src="Profile.jpeg" alt="Profile" width="200" height="200">
-        </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am student at the KCA university enrolled in the Software Development Program.I am looking forward to developing websites and innovation that will take technology as an entity. The programme iI am looking forward to launch is going to help small entrepreneurs reach a larger market. My interests are to explore the information technology space and make the most out of it.
-            </p>
-        </section>
+        <section class="projects-hero">
 
-        <section id="Skills">
-            <h2>My Skills</h2>
-            <div class="skill-card">
-                <span>HTML5</span>
-                <div class="progress-bar"><div class="progress" style="width:90%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <span>CSS3</span>
-                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" style="width:80%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <span>Python</span>
-                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
-            </div>
-            <div class="skill-card">
-                <span>Writing</span>
-                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
-            </div>
-        </section>
-
-        <section id="projects">
             <h2>My Projects</h2>
-            <div class="filter">
-                <button onclick="filterProjects('all')">All</button>
-                <button onclick="filterprojects('frontend')">Frontend</button>
-                <button onclick="filterProjects('backend')">Backend</button>
+
+            <p>
+                Here are some of the websites and programming projects
+                I have worked on during my studies and personal development.
+            </p>
+
+        </section>
+
+
+        <section class="skills-section" id="skills">
+
+            <h2>My Skills</h2>
+
+            <p class="section-intro">
+                These are some of the technical skills I have developed.
+            </p>
+
+
+            <div class="skills-container">
+
+                <div class="skill">
+                    <div class="Javascript">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="writing">
+                        <span>CSS</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="graphics design">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="software development">
+                        <span>Git & GitHub</span>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress github"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="trade skills">
+                        <span>Responsive Design</span>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress responsive"></div>
+                    </div>
+                </div>
+
             </div>
-            <div class="projects container">
-                <div class="project-card frontend">
-                    <h3>Small Big Marketers</h3>
-            <p>I am looking forward to creating a website that will enable the small business owners reach a far much bigger market in order to grow their businesses.</p>
-            <p><strong>Tech:</strong>HTML, CSS, JavaScript</p>
-            <a href="https://github.com/Josh-exe-yosh1/Small-Big-Marketers" target="_blank">View Repo</a>
+
+        </section>
+
+
+        <section class="projects-section" id="projects">
+
+            <h2>My Projects</h2>
+
+            <p class="section-intro">
+                A selection of projects I have created while learning
+                web development and programming.
+            </p>
+
+
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Websites
+                </button>
+
+                <button class="filter-btn" data-filter="javascript">
+                    JavaScript
+                </button>
+
+            </div>
+
+
+
+            <div class="projects-container">
+
+
+
+                <article class="project-card" data-category="web">
+
+                    <div class="project-image">
+                        <img
+                            src="images/Profile.jpeg"
+                            alt="Portfolio website project">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Personal Portfolio Website</h3>
+
+                        <p>
+                            A responsive personal portfolio website created
+                            to showcase my skills, education and web
+                            development projects.
+                        </p>
+
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <div class="project-details">
+
+                            <p>
+                                This project demonstrates responsive web
+                                design, navigation, page structure and
+                                JavaScript interactivity.
+                            </p>
+
+                            <a href="#" target="_blank">
+                                GitHub Repository
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card" data-category="javascript">
+
+                    <div class="project-image">
+                        <img
+                            src="images/Profile 3.jpg"
+                            alt="Small Big Marketers projects">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Small Big Marketers Projects</h3>
+
+                        <p>
+                            An imteraractive website that will enable small business owners
+                            reach a far much bigger market in order to grow their businesses
+                            and increase their revenue.
+                        </p>
+
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <div class="project-details">
+
+                            <p>
+                                The project helps business owners navigate the market.     
+                            </p>
+
+                            <a href="#" target="_blank">
+                                GitHub Repository
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card" data-category="web">
+
+                    <div class="project-image">
+                        <img
+                            src="images/Profile 2.jpg"
+                            alt="Content management System projects">
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Content Management System Projects</h3>
+
+                        <p>
+                            A responsive website tha can be used by content creators
+                            tomanage their content and reach a larger audience.
+                        </p>
+
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <div class="project-details">
+
+                            <p>
+                                This project focuses on responsive layouts,
+                                content organization and distribution for content creators.
+                            </p>
+
+                            <a href="#" target="_blank">
+                                Coming Soon
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="services-section" id="services">
+
+            <h2>Services</h2>
+
+            <p class="section-intro">
+                Services I could offer using the skills I am currently
+                developing.
+            </p>
+
+
+            <div class="services-container">
+
+                <div class="service-card">
+                    <h3>Basic Website Design</h3>
+
+                    <p>
+                        Creating simple and responsive websites using
+                        HTML and CSS.
+                    </p>
                 </div>
-                <div class=" project-card backend">
-                    <h4> Portfolio website</h4>
-             <p>This is a simple portfolio website built with HTML, CSS, and JavaScript.</p>
-             <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-            <a href="https://github.com/Josh-exe-yosh1/Portfolio-Website" target="_blank">View Repo</a>
+
+
+                <div class="service-card">
+                    <h3>Website Styling</h3>
+
+                    <p>
+                        Improving the appearance, layout and responsiveness
+                        of existing websites.
+                    </p>
                 </div>
-                    <h4>Content Management System</h4>
-                    <p>A simple content management system built with Python and Django.</p>
-                    <p><strong>Tech:</strong> Python, Django</p>
-                    <a href="https://github.com/Josh-exe-yosh1/Content-Management-System" target="_blank">View Repo</a>
+
+
+                <div class="service-card">
+                    <h3>Basic JavaScript</h3>
+
+                    <p>
+                        Adding simple interactive features such as buttons,
+                        forms, filters and dynamic content.
+                    </p>
                 </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section" id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                If you would like to get in touch, complete the form below.
+            </p>
+
+
+            <form id="contactForm" novalidate>
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+                    <small id="messageError"></small>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+
+
+                <p id="formSuccess"></p>
+
+            </form>
+
         </section>
 
     </main>
 
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Joshua Ondere" required>
-            <input type="email" id="email" placeholder="joshuaondere7@gmail.com" required>
-            <textarea id="message" placeholder="Your message here..." required></textarea>
-            <button type="submit">Send Message</button>
-            <p id="formError" style="color:red"></p>
-        </form>
-        <p>Email: <a href="mailto:joshuaondere7@gmail.com">joshuaondere7@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://github.com" target="_blank">@Josh-exe-yosh1</a>
-            
-            <a href="https://linkedin.com" target="_blank">joshua-ondere-60348a431</a>
-        </div>
-        <p class="copyright">&copy; 2026 Joshua Ondere. All rights reserved.</p>
+
+    <footer>
+
+        <p>
+            &copy; 2026 My Joshua Ondere. All Rights Reserved.
+        </p>
+
     </footer>
-    </div>
+
+
+
     <script src="script.js"></script>
 
 </body>

@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -25,7 +25,7 @@
         <section id="hero">
             <h1>Joshua Ondere</h1>
             <p class="tagline">A young aspiring Web developer looking to change the future of technology </p>
-            <img src="Profile.jpg" alt="Profile" width="200" lenth="200">
+            <img src="images/Profile.jpeg" alt="Profile" width="200" height="200">
         </section>
 
         <section id="about">
